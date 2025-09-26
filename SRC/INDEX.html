@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Kitty</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Food Kitty</h1>
+    <p>Donate or Request Food & Essentials for the Church Community</p>
+  </header>
+
+  <!-- Login Section -->
+  <section id="loginSection">
+    <h2>Login</h2>
+    <label>Name:<input type="text" id="userName"></label>
+    <label>Email:<input type="email" id="userEmail"></label>
+    <div class="login-buttons">
+      <button id="loginDonor">Login as Donor</button>
+      <button id="loginRequester">Login as Requester</button>
+    </div>
+  </section>
+
+  <!-- Donor Section -->
+  <section id="donorSection" class="hidden">
+    <h2>Donate Items</h2>
+    <div id="donorMessage" class="fade show"></div>
+    <div id="donorProducts" class="products"></div>
+    <button id="submitDonation">Submit Donation</button>
+    <button id="backToLogin1">Back to Login</button>
+  </section>
+
+  <!-- Request Section -->
+  <section id="requestSection" class="hidden">
+    <h2>Request Items</h2>
+    <div id="requestMessage" class="fade show"></div>
+    <div id="requestProducts" class="products"></div>
+    <button id="submitRequest">Submit Request</button>
+    <button id="backToLogin2">Back to Login</button>
+  </section>
+
+  <!-- Call & WhatsApp Buttons -->
+  <div class="contact-buttons">
+    <a href="tel:+254703259115" class="call-btn">📞 Call</a>
+    <a href="https://wa.me/254703259115" class="whatsapp-btn">💬 WhatsApp</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
